@@ -31,7 +31,7 @@ import (
 	"flag"
 	"strings"
 
-	"github.com/fjammes/qserv-tools/v2/metadata"
+	"github.com/gabrimaine/qserv-tools/v2/metadata"
 
 	"github.com/rs/zerolog"
 )
