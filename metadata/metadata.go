@@ -125,8 +125,7 @@ func walkDirs(inputDir string, idxDir string) TableMap {
 				return err
 			}
 			if ftype == Unknown {
-				err = fmt.Errorf("Not recognized file %s", path)
-				return err
+				log.Debug().Str("Not recognized file %s", path)
 			}
 			if isDataFile(ftype) {
 				err = appendMetadata(tables, tablename, dir, filename, ftype, chunkId)
